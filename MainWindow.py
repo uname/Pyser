@@ -115,9 +115,7 @@ class MainWindow(QtGui.QMainWindow):
             return
         
         # 以PB协议模式发送时, 在收发区显示协议编码后的HEX
-        if _type == config.PROTO_TYPE:
-            data += "\n" + util.toVisualHex(buff)
-        elif _type == config.ASCII_TYPE:
+        if _type == config.ASCII_TYPE:
             if self.incPrefix:
                 buff = `self.incStartVal` + buff
                 data = `self.incStartVal` + data

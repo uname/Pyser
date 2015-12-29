@@ -492,7 +492,7 @@
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
-      <widget class="QTextBrowser" name="recv_TextBrowser">
+      <widget class="Ui_TextView" name="recv_TextBrowser">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(0, 255, 0);</string>
@@ -679,13 +679,6 @@ p, li { white-space: pre-wrap; }
      </layout>
     </item>
    </layout>
-   <zorder>splitter_2</zorder>
-   <zorder>verticalSpacer_2</zorder>
-   <zorder>rx_lcdNumber</zorder>
-   <zorder>label_8</zorder>
-   <zorder>tx_lcdNumber</zorder>
-   <zorder>clearLcdNumber_pushButton</zorder>
-   <zorder>clear_pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -736,6 +729,13 @@ p, li { white-space: pre-wrap; }
    </property>
   </action>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Ui_TextView</class>
+   <extends>QTextBrowser</extends>
+   <header location="global">Ui_TextView.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections>
   <connection>

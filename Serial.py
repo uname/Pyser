@@ -81,12 +81,12 @@ class Serial(threading.Thread):
             try:
                 data = self.recv()
             except Exception:
-                self.qtobj.emit(SIGNAL(SC_Serial.SIG_RECVEXCEPTION))
+                self.qtobj.emit(SIGNAL(Serial.SIG_RECVEXCEPTION))
                 break
 
             if not data:
                 break
 
-            self.qtobj.emit(SIGNAL(SC_Serial.SIG_NEWDATA), data)
+            self.qtobj.emit(SIGNAL(Serial.SIG_NEWDATA), data)
 
         self.serial.close()

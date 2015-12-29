@@ -187,7 +187,7 @@ class Ui_Proxy(Ui_MainWindow):
         if not self.hideSRFlag_checkBox.isChecked():
             text = 'SEND (%s)\n%s\n' % (util.QStringToStr(QTime.currentTime().toString()), data)
             
-        self.recv_TextBrowser.append(text)
+        self.recv_TextBrowser.setPlainTextWithNoNL(text)
 
     
     def onRecvData(self, data):
@@ -195,10 +195,10 @@ class Ui_Proxy(Ui_MainWindow):
         if not self.hideSRFlag_checkBox.isChecked():
             text = 'RECV (%s)\n%s' % (util.QStringToStr(QTime.currentTime().toString()), data)
         
-        self.recv_TextBrowser.append(text)
+        self.recv_TextBrowser.setPlainTextWithNoNL(text)
         
         if self.autoLF_checkBox.isChecked():
-            self.recv_TextBrowser.append("\n")
+            self.recv_TextBrowser.setPlainTextWithNoNL("\n")
     
     def clearHistory(self):
         self.recv_TextBrowser.clear()
