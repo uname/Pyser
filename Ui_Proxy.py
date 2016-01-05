@@ -13,7 +13,7 @@ class Ui_Proxy(Ui_MainWindow):
         Ui_MainWindow.__init__(self)
     
     def setupWidget(self, wobj):
-        wobj.setWindowIcon(QIcon(QPixmap(":/logo/icons/logo/logo.png")))
+        wobj.setWindowIcon(QIcon(QPixmap(":/app/icons/app/logo.png")))
         self.updatePortComBox(isOpening=True)
         self.send_pushButton.setShortcut(QKeySequence(Qt.Key_Return + Qt.CTRL))
         

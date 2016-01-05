@@ -2,7 +2,8 @@
 
 # Form implementation generated from reading ui file 'ui/MainWindow.ui'
 #
-# Created by: PyQt4 UI code generator 4.11.4
+# Created: Tue Jan 05 11:36:50 2016
+#      by: PyQt4 UI code generator 4.9.5
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -11,16 +12,7 @@ from PyQt4 import QtCore, QtGui
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
-    def _fromUtf8(s):
-        return s
-
-try:
-    _encoding = QtGui.QApplication.UnicodeUTF8
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig, _encoding)
-except AttributeError:
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig)
+    _fromUtf8 = lambda s: s
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -294,82 +286,82 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(_translate("MainWindow", "SC_SerialTool", None))
-        self.groupBox.setTitle(_translate("MainWindow", "串口设置", None))
-        self.sendType_comboBox.setItemText(0, _translate("MainWindow", "ASCII", None))
-        self.sendType_comboBox.setItemText(1, _translate("MainWindow", "HEX", None))
-        self.asciiTail_comboBox.setItemText(0, _translate("MainWindow", "CR+LF", None))
-        self.asciiTail_comboBox.setItemText(1, _translate("MainWindow", "LF", None))
-        self.asciiTail_comboBox.setItemText(2, _translate("MainWindow", "CR", None))
-        self.asciiTail_comboBox.setItemText(3, _translate("MainWindow", "NONE", None))
-        self.autoLF_checkBox.setText(_translate("MainWindow", "自动换行", None))
-        self.hideSRFlag_checkBox.setText(_translate("MainWindow", "隐藏收发标志", None))
-        self.inc_checkBox.setText(_translate("MainWindow", "自增前缀", None))
-        self.resetStartVal_pushButton.setText(_translate("MainWindow", "前缀归零", None))
-        self.autoSend_checkBox.setText(_translate("MainWindow", "自动发送", None))
-        self.label_2.setText(_translate("MainWindow", "间隔（毫秒）", None))
-        self.showSent_checkBox.setText(_translate("MainWindow", "显示发送数据", None))
-        self.label_5.setText(_translate("MainWindow", "校验位", None))
-        self.parity_comboBox.setItemText(0, _translate("MainWindow", "N", None))
-        self.parity_comboBox.setItemText(1, _translate("MainWindow", "E", None))
-        self.parity_comboBox.setItemText(2, _translate("MainWindow", "O", None))
-        self.label_9.setText(_translate("MainWindow", "接收设置", None))
-        self.open_pushButton.setText(_translate("MainWindow", "打开", None))
-        self.clearSentText_checkBox.setText(_translate("MainWindow", "发送后清空发送框数据", None))
-        self.label_6.setText(_translate("MainWindow", "数据位", None))
-        self.bytesize_comboBox.setItemText(0, _translate("MainWindow", "8", None))
-        self.bytesize_comboBox.setItemText(1, _translate("MainWindow", "7", None))
-        self.bytesize_comboBox.setItemText(2, _translate("MainWindow", "6", None))
-        self.bytesize_comboBox.setItemText(3, _translate("MainWindow", "5", None))
-        self.label.setText(_translate("MainWindow", "串  口", None))
-        self.label_10.setText(_translate("MainWindow", "发送设置", None))
-        self.label_7.setText(_translate("MainWindow", "停止位", None))
-        self.stopbits_comboBox.setItemText(0, _translate("MainWindow", "1", None))
-        self.stopbits_comboBox.setItemText(1, _translate("MainWindow", "1.5", None))
-        self.stopbits_comboBox.setItemText(2, _translate("MainWindow", "2", None))
-        self.recvType_comboBox.setItemText(0, _translate("MainWindow", "ASCII", None))
-        self.recvType_comboBox.setItemText(1, _translate("MainWindow", "HEX", None))
-        self.label_4.setText(_translate("MainWindow", "波特率", None))
-        self.baud_comboBox.setItemText(0, _translate("MainWindow", "75", None))
-        self.baud_comboBox.setItemText(1, _translate("MainWindow", "110", None))
-        self.baud_comboBox.setItemText(2, _translate("MainWindow", "134", None))
-        self.baud_comboBox.setItemText(3, _translate("MainWindow", "150", None))
-        self.baud_comboBox.setItemText(4, _translate("MainWindow", "300", None))
-        self.baud_comboBox.setItemText(5, _translate("MainWindow", "600", None))
-        self.baud_comboBox.setItemText(6, _translate("MainWindow", "1200", None))
-        self.baud_comboBox.setItemText(7, _translate("MainWindow", "1800", None))
-        self.baud_comboBox.setItemText(8, _translate("MainWindow", "2400", None))
-        self.baud_comboBox.setItemText(9, _translate("MainWindow", "4800", None))
-        self.baud_comboBox.setItemText(10, _translate("MainWindow", "7200", None))
-        self.baud_comboBox.setItemText(11, _translate("MainWindow", "9600", None))
-        self.baud_comboBox.setItemText(12, _translate("MainWindow", "14400", None))
-        self.baud_comboBox.setItemText(13, _translate("MainWindow", "19200", None))
-        self.baud_comboBox.setItemText(14, _translate("MainWindow", "38400", None))
-        self.baud_comboBox.setItemText(15, _translate("MainWindow", "57600", None))
-        self.baud_comboBox.setItemText(16, _translate("MainWindow", "115200", None))
-        self.baud_comboBox.setItemText(17, _translate("MainWindow", "128000", None))
-        self.baud_comboBox.setItemText(18, _translate("MainWindow", "230400", None))
-        self.updatePort_pushButton.setText(_translate("MainWindow", "刷新", None))
-        self.recv_TextBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "Pyser", None, QtGui.QApplication.UnicodeUTF8))
+        self.groupBox.setTitle(QtGui.QApplication.translate("MainWindow", "串口设置", None, QtGui.QApplication.UnicodeUTF8))
+        self.sendType_comboBox.setItemText(0, QtGui.QApplication.translate("MainWindow", "ASCII", None, QtGui.QApplication.UnicodeUTF8))
+        self.sendType_comboBox.setItemText(1, QtGui.QApplication.translate("MainWindow", "HEX", None, QtGui.QApplication.UnicodeUTF8))
+        self.asciiTail_comboBox.setItemText(0, QtGui.QApplication.translate("MainWindow", "CR+LF", None, QtGui.QApplication.UnicodeUTF8))
+        self.asciiTail_comboBox.setItemText(1, QtGui.QApplication.translate("MainWindow", "LF", None, QtGui.QApplication.UnicodeUTF8))
+        self.asciiTail_comboBox.setItemText(2, QtGui.QApplication.translate("MainWindow", "CR", None, QtGui.QApplication.UnicodeUTF8))
+        self.asciiTail_comboBox.setItemText(3, QtGui.QApplication.translate("MainWindow", "NONE", None, QtGui.QApplication.UnicodeUTF8))
+        self.autoLF_checkBox.setText(QtGui.QApplication.translate("MainWindow", "自动换行", None, QtGui.QApplication.UnicodeUTF8))
+        self.hideSRFlag_checkBox.setText(QtGui.QApplication.translate("MainWindow", "隐藏收发标志", None, QtGui.QApplication.UnicodeUTF8))
+        self.inc_checkBox.setText(QtGui.QApplication.translate("MainWindow", "自增前缀", None, QtGui.QApplication.UnicodeUTF8))
+        self.resetStartVal_pushButton.setText(QtGui.QApplication.translate("MainWindow", "前缀归零", None, QtGui.QApplication.UnicodeUTF8))
+        self.autoSend_checkBox.setText(QtGui.QApplication.translate("MainWindow", "自动发送", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_2.setText(QtGui.QApplication.translate("MainWindow", "间隔（毫秒）", None, QtGui.QApplication.UnicodeUTF8))
+        self.showSent_checkBox.setText(QtGui.QApplication.translate("MainWindow", "显示发送数据", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_5.setText(QtGui.QApplication.translate("MainWindow", "校验位", None, QtGui.QApplication.UnicodeUTF8))
+        self.parity_comboBox.setItemText(0, QtGui.QApplication.translate("MainWindow", "N", None, QtGui.QApplication.UnicodeUTF8))
+        self.parity_comboBox.setItemText(1, QtGui.QApplication.translate("MainWindow", "E", None, QtGui.QApplication.UnicodeUTF8))
+        self.parity_comboBox.setItemText(2, QtGui.QApplication.translate("MainWindow", "O", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_9.setText(QtGui.QApplication.translate("MainWindow", "接收设置", None, QtGui.QApplication.UnicodeUTF8))
+        self.open_pushButton.setText(QtGui.QApplication.translate("MainWindow", "打开", None, QtGui.QApplication.UnicodeUTF8))
+        self.clearSentText_checkBox.setText(QtGui.QApplication.translate("MainWindow", "发送后清空发送框数据", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_6.setText(QtGui.QApplication.translate("MainWindow", "数据位", None, QtGui.QApplication.UnicodeUTF8))
+        self.bytesize_comboBox.setItemText(0, QtGui.QApplication.translate("MainWindow", "8", None, QtGui.QApplication.UnicodeUTF8))
+        self.bytesize_comboBox.setItemText(1, QtGui.QApplication.translate("MainWindow", "7", None, QtGui.QApplication.UnicodeUTF8))
+        self.bytesize_comboBox.setItemText(2, QtGui.QApplication.translate("MainWindow", "6", None, QtGui.QApplication.UnicodeUTF8))
+        self.bytesize_comboBox.setItemText(3, QtGui.QApplication.translate("MainWindow", "5", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("MainWindow", "串  口", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_10.setText(QtGui.QApplication.translate("MainWindow", "发送设置", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_7.setText(QtGui.QApplication.translate("MainWindow", "停止位", None, QtGui.QApplication.UnicodeUTF8))
+        self.stopbits_comboBox.setItemText(0, QtGui.QApplication.translate("MainWindow", "1", None, QtGui.QApplication.UnicodeUTF8))
+        self.stopbits_comboBox.setItemText(1, QtGui.QApplication.translate("MainWindow", "1.5", None, QtGui.QApplication.UnicodeUTF8))
+        self.stopbits_comboBox.setItemText(2, QtGui.QApplication.translate("MainWindow", "2", None, QtGui.QApplication.UnicodeUTF8))
+        self.recvType_comboBox.setItemText(0, QtGui.QApplication.translate("MainWindow", "ASCII", None, QtGui.QApplication.UnicodeUTF8))
+        self.recvType_comboBox.setItemText(1, QtGui.QApplication.translate("MainWindow", "HEX", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_4.setText(QtGui.QApplication.translate("MainWindow", "波特率", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(0, QtGui.QApplication.translate("MainWindow", "75", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(1, QtGui.QApplication.translate("MainWindow", "110", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(2, QtGui.QApplication.translate("MainWindow", "134", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(3, QtGui.QApplication.translate("MainWindow", "150", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(4, QtGui.QApplication.translate("MainWindow", "300", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(5, QtGui.QApplication.translate("MainWindow", "600", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(6, QtGui.QApplication.translate("MainWindow", "1200", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(7, QtGui.QApplication.translate("MainWindow", "1800", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(8, QtGui.QApplication.translate("MainWindow", "2400", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(9, QtGui.QApplication.translate("MainWindow", "4800", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(10, QtGui.QApplication.translate("MainWindow", "7200", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(11, QtGui.QApplication.translate("MainWindow", "9600", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(12, QtGui.QApplication.translate("MainWindow", "14400", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(13, QtGui.QApplication.translate("MainWindow", "19200", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(14, QtGui.QApplication.translate("MainWindow", "38400", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(15, QtGui.QApplication.translate("MainWindow", "57600", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(16, QtGui.QApplication.translate("MainWindow", "115200", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(17, QtGui.QApplication.translate("MainWindow", "128000", None, QtGui.QApplication.UnicodeUTF8))
+        self.baud_comboBox.setItemText(18, QtGui.QApplication.translate("MainWindow", "230400", None, QtGui.QApplication.UnicodeUTF8))
+        self.updatePort_pushButton.setText(QtGui.QApplication.translate("MainWindow", "刷新", None, QtGui.QApplication.UnicodeUTF8))
+        self.recv_TextBrowser.setHtml(QtGui.QApplication.translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'新宋体\';\"><br /></p></body></html>", None))
-        self.send_TextEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'新宋体\';\"><br /></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
+        self.send_TextEdit.setHtml(QtGui.QApplication.translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'新宋体\';\"><br /></p></body></html>", None))
-        self.label_3.setText(_translate("MainWindow", " RX", None))
-        self.label_8.setText(_translate("MainWindow", "TX", None))
-        self.clearLcdNumber_pushButton.setText(_translate("MainWindow", "统计清零", None))
-        self.clear_pushButton.setText(_translate("MainWindow", "清空", None))
-        self.send_pushButton.setText(_translate("MainWindow", "        发送        ", None))
-        self.menu.setTitle(_translate("MainWindow", "文件", None))
-        self.menuHelp.setTitle(_translate("MainWindow", "帮助", None))
-        self.about_action.setText(_translate("MainWindow", "关于", None))
-        self.saveData_action.setText(_translate("MainWindow", "保存接收区数据", None))
-        self.quit_action.setText(_translate("MainWindow", "退出", None))
-        self.settings_action.setText(_translate("MainWindow", "数据合并", None))
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'新宋体\';\"><br /></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_3.setText(QtGui.QApplication.translate("MainWindow", " RX", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_8.setText(QtGui.QApplication.translate("MainWindow", "TX", None, QtGui.QApplication.UnicodeUTF8))
+        self.clearLcdNumber_pushButton.setText(QtGui.QApplication.translate("MainWindow", "统计清零", None, QtGui.QApplication.UnicodeUTF8))
+        self.clear_pushButton.setText(QtGui.QApplication.translate("MainWindow", "清空", None, QtGui.QApplication.UnicodeUTF8))
+        self.send_pushButton.setText(QtGui.QApplication.translate("MainWindow", "        发送        ", None, QtGui.QApplication.UnicodeUTF8))
+        self.menu.setTitle(QtGui.QApplication.translate("MainWindow", "文件", None, QtGui.QApplication.UnicodeUTF8))
+        self.menuHelp.setTitle(QtGui.QApplication.translate("MainWindow", "帮助", None, QtGui.QApplication.UnicodeUTF8))
+        self.about_action.setText(QtGui.QApplication.translate("MainWindow", "关于", None, QtGui.QApplication.UnicodeUTF8))
+        self.saveData_action.setText(QtGui.QApplication.translate("MainWindow", "保存接收区数据", None, QtGui.QApplication.UnicodeUTF8))
+        self.quit_action.setText(QtGui.QApplication.translate("MainWindow", "退出", None, QtGui.QApplication.UnicodeUTF8))
+        self.settings_action.setText(QtGui.QApplication.translate("MainWindow", "数据合并", None, QtGui.QApplication.UnicodeUTF8))
 
 from Ui_TextView import Ui_TextView
