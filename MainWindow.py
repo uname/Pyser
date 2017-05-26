@@ -3,7 +3,7 @@ import re
 from PyQt4 import QtGui, QtCore
 from Ui_Proxy import Ui_Proxy
 from Serial import Serial
-from TipWidget import TipWidget
+#from TipWidget import TipWidget
 from appicons import *
 import DataManager
 import util
@@ -23,7 +23,7 @@ class MainWindow(QtGui.QMainWindow):
         
         self.ui.setupUi(self)
         self.ui.setupWidget(self)
-        self.tipWidget = TipWidget(self)
+        #self.tipWidget = TipWidget(self)
         
         self.setupSignals()
         
@@ -87,7 +87,7 @@ class MainWindow(QtGui.QMainWindow):
     
     def onUpdatePort(self):
         newCount = self.ui.updatePortComBox(self.flags["__isopen__"])
-        self.tipWidget.makeInfoText(u"更新了 " + `newCount` + u" 个串口")
+        #self.tipWidget.makeInfoText(u"更新了 " + `newCount` + u" 个串口")
     
     def onSendData(self):
         if not self.flags["__isopen__"]:
